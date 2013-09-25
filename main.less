@@ -21,10 +21,54 @@ h1{
   border-bottom: #CCC solid 1px;
   padding: 10px 0;
   font-weight: 400; 
+  margin:0px;
+  color:#0ff;
 }
 
 h2{
   font-family: 'Monoton', cursive; /* "Helvetica";*/
   font-weight: 400; 
   font-size: 50px;
+  margin:0px;
+  color: #0e0;
+}
+
+
+#map {
+  position: relative;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+}
+
+.tile {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+}
+
+.tile path {
+  fill: none;
+  stroke: #000;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.tile path:hover {
+  stroke: #0ff;
+  stroke-width: 3.5px;
+  cursor: pointer;
+}
+
+.tile .major_road { stroke: #f39; }
+/*.tile .minor_road { stroke: #; }*/
+.tile .highway { stroke: #CD3278; stroke-width: 1.5px; }
+.tile .rail { stroke: #ff0; }
+
+.info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
