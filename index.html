@@ -59,7 +59,7 @@
         <div class="block">
           <h1>JS.Geo</h1>
           <h3>A Geospatial Javascript Conference</h3>
-          <h3>PDX September 13, 2014</h3>
+          <h3>PDX September 9, 2014</h3>
           <a id="tix" href="#">Tickets</a>
         </div>
         <div id="map"></div>
@@ -68,12 +68,12 @@
         </div>
         
         <script type="text/javascript">
-          var map = L.map('map').setView([45.5200, -122.6819], 14);
+          var map = L.map('map').setView([45.5200, -122.6819], 13);
           L.tileLayer('http://a2.acetate.geoiq.com/tiles/acetate/{z}/{x}/{y}.png', {
             maxZooom: 18  
           }).addTo(map);
 
-          var marker = L.marker([45.5200, -122.6819])
+          var marker = L.marker([45.512240, -122.684204])
           marker.bindPopup("This is where it happens!");
           marker.addTo(map);
           
