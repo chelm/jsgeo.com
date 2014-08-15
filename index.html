@@ -34,6 +34,10 @@
         font-size: 10vw;
         margin:0px;
       }
+      h2 {
+        font-size: 10vw;
+        margin:0px;
+      }
       h3 {
         font-size: 3vw;
         margin:0px;
@@ -48,7 +52,41 @@
         padding:20px;
       }
       #map { 
-        height: 50vh;
+        height: 45vh;
+      }
+
+      .presenter {
+        padding:20px;
+      }
+
+      .name {
+        font-size: 14pt;
+        color:#999;
+      } 
+
+      .title {
+        font-size: 16pt;
+      }
+
+      .presenter img {
+        border-radius: 1000px;
+        transition: 1s;
+        width: 20vw;
+        min-width: 50px;
+        max-width: 175px;
+      }
+
+      img.grey { 
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        filter: grayscale(100%);
+        
+      }
+
+      img.grey:hover {
+        -webkit-filter: none;
+        -moz-filter: none;
+        filter: none;
       }
       
     </style>
@@ -63,8 +101,49 @@
           <a id="tix" target="_blank" href="http://www.eventbrite.com/e/jsgeo-2014-tickets-12450450633">Tickets!</a>
         </div>
         <div id="map"></div>
-        <div class="block">
-          <h2>Speakers<h2>
+        <div>
+          <h2>Speakers</h2>
+        </div>
+        <div class="presenter">
+          <img class="grey" src="images/mourner.jpeg" /><br/>
+          <span class="name">Vladimir Agafonkin </span><br/>
+          <span class="title">The Future of Leaflet</span>
+        </div>
+        <div class="presenter">
+          <img class="grey" src="images/cozzi.jpg" /><br/>
+          <span class="name">Patrick Cozzi</span><br/>
+          <span class="title">Creating 3D web maps with Cesium</span>
+        </div>
+        <div class="presenter">
+          <img class="grey" src="images/jden.jpeg" /><br/>
+          <span class="name">Jason Denizac</span><br/>
+          <span class="title">Real Time GeoJSON APIs</span>
+        </div>
+        <div class="presenter">
+          <img class="grey" src="images/jfire.jpg" /><br/>
+          <span class="name">John Firebaugh</span><br/>
+          <span class="title">7±1 Ways GL Maps Will Change The World</span>
+        </div>
+        <!--div class="presenter">
+          <img class="grey" src="images/kenny.png" /><br/>
+          <span class="name">Brendan Kenny</span><br/>
+          <span class="title">Map Animation at Google</span>
+        </div-->
+        <div class="presenter">
+          <img class="grey" src="images/metcalf.jpeg" /><br/>
+          <span class="name">Calvin Metcalf</span><br/>
+          <span class="title">PouchDB and SQLDown</span>
+        </div>
+        <div class="presenter">
+          <img class="grey" src="images/priour.jpeg" /><br/>
+          <span class="name">Matt Priour</span><br/>
+          <span class="title">Making Workers Work For You</span>
+        </div>
+        <div class="presenter">
+          <img class="grey" src="images/santana.png" /><br/>
+          <span class="name">Javier Santana</span><br/>
+          <span class="title">Torque.js Internals: How to Render 3M Animated Points on a Map</span>
+        </div>
         </div>
         
         <script type="text/javascript">
