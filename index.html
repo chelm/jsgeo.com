@@ -60,17 +60,17 @@
           <h1>JS.Geo</h1>
           <h3>A Geospatial Javascript Conference</h3>
           <h3>PDX September 9, 2014</h3>
-          <a id="tix" href="http://www.eventbrite.com/e/jsgeo-2014-tickets-12450450633">Tickets!</a>
+          <a id="tix" target="_blank" href="http://www.eventbrite.com/e/jsgeo-2014-tickets-12450450633">Tickets!</a>
         </div>
         <div id="map"></div>
         <div class="block">
-          <h3>Speakers coming soon<h3>
+          <h2>Speakers<h2>
         </div>
         
         <script type="text/javascript">
-          var map = L.map('map').setView([45.5200, -122.6819], 13);
+          var map = L.map('map', {scrollWheelZoom: false}).setView([45.5200, -122.6819], 13);
           L.tileLayer('http://a2.acetate.geoiq.com/tiles/acetate/{z}/{x}/{y}.png', {
-            maxZooom: 18  
+            maxZooom: 18,
           }).addTo(map);
 
           var marker = L.marker([45.512240, -122.684204])
