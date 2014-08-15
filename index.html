@@ -147,6 +147,28 @@
         </div>
         
         <script type="text/javascript">
+          (function($){
+            $.fn.shuffle = function() {
+                var allElems = this.get(),
+                    getRandom = function(max) {
+                        return Math.floor(Math.random() * max);
+                    },
+                    shuffled = $.map(allElems, function(){
+                        var random = getRandom(allElems.length),
+                            randEl = $(allElems[random]).clone(true)[0];
+                        allElems.splice(random, 1);
+                        return randEl;
+                   });
+         
+                this.each(function(i){
+                    $(this).replaceWith($(shuffled[i]));
+                });
+         
+                return $(shuffled);
+         
+            };
+          })(jQuery);
+
           var map = L.map('map', {scrollWheelZoom: false}).setView([45.5200, -122.6819], 13);
           L.tileLayer('http://a2.acetate.geoiq.com/tiles/acetate/{z}/{x}/{y}.png', {
             maxZooom: 18,
@@ -155,6 +177,8 @@
           var marker = L.marker([45.512240, -122.684204])
           marker.bindPopup("It all goes down at Portland State University");
           marker.addTo(map);
+
+          $('div.presenter').shuffle();
           
         </script>
         <script>
