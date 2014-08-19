@@ -36,13 +36,14 @@
         margin:0px;
       }
       h2 {
-        font-size: 8vw;
+        font-size: 7vw;
         margin:0px;
       }
       h3 {
         font-size: 3vw;
         margin:0px;
         color: #999;
+        padding-bottom:2px;
       }
       #tix {
         font-size: 3vw;
@@ -51,6 +52,9 @@
       }
       .block {
         padding:20px;
+      }
+      .left {
+        text-align:left;
       }
       #map { 
         height: 45vh;
@@ -89,6 +93,14 @@
         -moz-filter: none;
         filter: none;
       }
+
+      .sponsors {
+        padding: 5px 20px;
+      }
+
+      .sponsors img {
+        width:18vw;
+      }
       
     </style>
     </head>
@@ -100,6 +112,10 @@
           <h3>A Geospatial Javascript Conference</h3>
           <h3>PDX September 9, 2014</h3>
           <a id="tix" target="_blank" href="http://www.eventbrite.com/e/jsgeo-2014-tickets-12450450633">Tickets!</a>
+        </div>
+        <div class="block sponsors">
+          <h3>Sponsored by:</h3>
+          <a href="https://www.openshift.com/"><img src="images/openshift.png"/></a>
         </div>
         <div id="map"></div>
         <div id="speakers">
@@ -123,8 +139,8 @@
           </div>
           <div class="col span_1_of_3">
             <div class="presenter">
-              <img class="grey" src="images/jfire.jpg" /><br/>
-              <span class="name">John Firebaugh</span><br/>
+              <img class="grey" src="images/lbudorick.jpeg" /><br/>
+              <span class="name">Lauren Budorick</span><br/>
               <span class="title">7±1 Ways GL Maps Will Change The World</span>
             </div>
           </div>
