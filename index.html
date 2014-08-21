@@ -70,7 +70,8 @@
       } 
 
       .title {
-        font-size: 14pt;
+        font-size: 12pt;
+        width: 100px;
       }
 
       .presenter img {
@@ -101,7 +102,7 @@
       .sponsors img {
         width:18vw;
       }
-      
+
     </style>
     </head>
 
@@ -118,16 +119,23 @@
           <a href="https://www.openshift.com/"><img src="images/openshift.png"/></a>
         </div>
         <div id="map"></div>
-        <div id="speakers">
-          <h2>Speakers</h2>
-        </div>
 
         <div class="section group">
+          <div id="speakers">
+            <h2>Speakers</h2>
+          </div>
           <div class="col span_1_of_3">
             <div class="presenter">
               <img class="grey" src="images/mourner.jpeg" /><br/>
               <span class="name">Vladimir Agafonkin </span><br/>
               <span class="title">The Future of Leaflet</span>
+            </div>
+          </div>
+          <div class="col span_1_of_3">
+            <div class="presenter">
+              <img class="grey" src="images/vanessa.jpg" /><br/>
+              <span class="name">Vanessa Archambault</span><br/>
+              <span class="title">Maps, Data, and Charts - Bound for Great Things!</span>
             </div>
           </div>
           <div class="col span_1_of_3">
@@ -184,7 +192,7 @@
         <div class="block">
           <h3>Schedule coming soon...</h3>
         </div>
-       
+
         <script> 
           var map = L.map('map', {scrollWheelZoom: false}).setView([45.5200, -122.6819], 13);
           L.tileLayer('http://a2.acetate.geoiq.com/tiles/acetate/{z}/{x}/{y}.png', {
