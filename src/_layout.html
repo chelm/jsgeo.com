@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>{{title}}</title>
+
+    {% if description %}
+      <meta name="description" content="{{description}}">
+    {% endif %}
+
+    {% if author %}
+      <meta name="description" content="{{author}}">
+    {% endif %}
+
+    <link href='/css/main.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Unica+One|Karla:400,400italic,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    {% block main %}{% endblock %}
+  </body>
+</html>
