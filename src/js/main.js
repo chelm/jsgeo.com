@@ -3,7 +3,7 @@ let message = "Hey JS.Geo people";
 console.log(message);
 
 var width = window.innerWidth,
-    height = 400;
+    height = 425;
 
 var tiler = d3.geo.tile()
     .size([width, height]);
@@ -30,7 +30,6 @@ svg.selectAll("g")
       var g = d3.select(this);
       var host = ["a", "b", "c"][(d[0] * 31 + d[1]) % 3];
       var url = ["http://", host, ".tile.openstreetmap.us/vectiles-highroad/", d[2], "/", d[0], "/", d[1],".json"].join('');
-      console.log(url);
       d3.json(url, function(error, json) {
         g.selectAll("path")
             .data(json.features.sort(function(a, b) { return a.properties.sort_key - b.properties.sort_key; }))
@@ -39,3 +38,6 @@ svg.selectAll("g")
             .attr("d", path);
         });
     });
+
+//39.956184, -75.191801 sceince center
+//39.955705, -75.182148 amtrak 

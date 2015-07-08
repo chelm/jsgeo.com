@@ -6,8 +6,10 @@
 $blue: #081860;
 $cream: #FCFDF8;
 $gray: #bcc4d3;
+$splash: #2f3b48;
+//$splash: #27354F;
 $maroon: #800;
-$splash: #27354F;
+$turq: #1c8383; 
 
 $body-font: 'Open Sans', 'Karla', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 $header-font: 'Unica One', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -73,12 +75,42 @@ $grad2: #267871;
   left: 0px;
 }
 
-#tix { 
+#nav {
   position: absolute;
-  top:10px;
-  right: 10px;
+  top: 0px;
+  right: 0px;
+  height: 75px;
+  z-index: 100;
+  span {
+    font-size:20px;
+    font-family: $header-font;
+    text-transform: uppercase;
+    color: $cream;
+    margin: 0px 10px;
+  }
+  a {
+    font-size:20px;
+    font-family: $header-font;
+    text-transform: uppercase;
+    color: $cream;
+    margin: 0px 10px;
+    text-decoration: none;
+  }
+}
+
+#nav a:hover {
+  color: $turq;
+}
+
+#nav span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: $turq; 
+}
+
+#tix { 
   border: 1px solid $cream;
-  border-radius: 4px;
+  border-radius: 10px;
   color: $cream;
   font-size:20px;
   padding: 10px;
@@ -97,11 +129,12 @@ $grad2: #267871;
 }
 
 #about {
-  background: #f4f8fb;
-  font-size: 40%;
+  font-size: 60%;
+  color: $splash;
   #info {
-    width: 300px;
+    padding-bottom: 10px;
     margin:auto;
+    width: 75%;
   }
 }
 
@@ -114,14 +147,34 @@ path {
   stroke-linecap: round;
 }
 
+.content {
+  .head {
+    height: 100px;
+    font-size: 44px; 
+    //border: 1px solid;
+    font-family: $philly-font;
+    padding-top:25px;
+  }
+  .foot {
+    height: 100px;
+    font-size: 14px;
+    width: 75%;
+    margin:auto; 
+    //border: 1px solid;
+  }
+}
+
 #venue {
   font-size: 40%;
-  height: 250px;
-  width: 50%;
+  height: 300px;
   margin:auto;
+  color: $splash;
+  #larger {
+    font-size: 18px;
+  }
 }
 #logo {
-  background: url(../img/usc.jpeg) no-repeat 50% 0;
+  //background: url(../img/usc.jpeg) no-repeat 50% 0;
   height: 185px;
 }
 
@@ -152,4 +205,64 @@ path {
 #footer {
   border-top: 1px solid #aaa;
   width: 75%
+}
+  
+#speakers h1, h2 {
+  padding:0px;
+  margin:0px;
+}
+
+#sponsors h1, h2 {   
+  padding:10px 0px;
+  margin:0px;
+}
+
+#speakers {
+  color: $cream;
+  background: $splash;
+  .head {
+    height: auto;
+    padding: 25px 0;
+  }
+  .speaker {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    border-radius: 120px;
+    background: $cream;
+    color: $cream;
+    margin: 5px 10px;
+    opacity: .75;
+  }
+}
+
+#sponsors {
+  color: $cream;
+  background: $turq;
+  .sponsor {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 5px;
+    background: $splash;
+    color: $cream;
+    border:1px solid $cream;
+  }
+}
+
+#conduct {
+  color: $cream;
+  background: $turq;
+  font-size: 50%;
+  
+  .body {
+    width: 75%;
+    margin: auto;
+  }
+  .foot {
+    height: 25px;
+  }
+  .head {
+    height: 65px;
+  }
 }

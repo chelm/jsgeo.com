@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "rimraf build && npm run dev",
-    "dev": "acetate server --open | npm run watchify | npm run sass:watch | rerun-script",
+    "dev": "acetate server --open | npm run watchify | npm run sass:watch ",
     "assets": "npm run browserify | npm run sass | npm run img",
     "build": "rimraf build && npm run assets && npm run rev && acetate build",
     "rev": "hashmark -l 8 --asset-map=build/asset-manifest.json 'build/{js,img,css}/**/*.{css,js,png,gif,jpg,jpeg}' '{dir}/{name}.{hash}{ext}'",
