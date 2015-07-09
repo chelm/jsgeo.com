@@ -69,12 +69,12 @@ h1, h2 {
     text-decoration: none; }
 
 #nav a:hover {
-  color: #1c8383; }
+  color: #406D7E; }
 
 #nav span:hover {
   cursor: pointer;
   text-decoration: underline;
-  color: #1c8383; }
+  color: #406D7E; }
 
 #tix {
   border: 1px solid #FCFDF8;
@@ -124,7 +124,8 @@ path {
   font-size: 40%;
   height: 300px;
   margin: auto;
-  color: #2f3b48; }
+  color: #FCFDF8;
+  background: #406D7E; }
   #venue #larger {
     font-size: 18px; }
 
@@ -162,8 +163,7 @@ path {
   margin: 0px; }
 
 #speakers {
-  color: #FCFDF8;
-  background: #2f3b48; }
+  color: #2f3b48; }
   #speakers .head {
     height: auto;
     padding: 25px 0; }
@@ -172,26 +172,23 @@ path {
     height: 120px;
     display: inline-block;
     border-radius: 120px;
-    background: #FCFDF8;
+    background: #2f3b48;
     color: #FCFDF8;
-    margin: 5px 10px;
-    opacity: .75; }
+    margin: 5px 10px; }
 
 #sponsors {
   color: #FCFDF8;
-  background: #1c8383; }
+  background: #406D7E; }
   #sponsors .sponsor {
-    width: 100px;
+    width: 130px;
     height: 100px;
     display: inline-block;
     border-radius: 5px;
     background: #2f3b48;
-    color: #FCFDF8;
-    border: 1px solid #FCFDF8; }
+    color: #FCFDF8; }
 
 #conduct {
-  color: #FCFDF8;
-  background: #1c8383;
+  color: #2f3b48;
   font-size: 50%; }
   #conduct .body {
     width: 75%;
