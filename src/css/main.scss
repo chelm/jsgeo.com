@@ -68,12 +68,22 @@ $grad2: #267871;
   background: $splash;
   width: 100%;
   padding: 10px;
+  overflow: hidden;
 }
 
 #philly-map {
   position: absolute;
   top: 0px;
   left: 0px;
+  overflow: hidden;
+  .info {
+    position: absolute;
+    background: $cream;
+    color: $splash;
+    bottom: 0px;
+    right: 0px;
+    font-size: 10px;
+  }
 }
 
 #nav {
@@ -139,15 +149,6 @@ $grad2: #267871;
   }
 }
 
-path {
-  fill: none;
-  stroke: #eee;
-  stroke-width: .25px;
-  stroke-opacity: .75;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-}
-
 .content {
   .head {
     height: 100px;
@@ -155,12 +156,17 @@ path {
     //border: 1px solid;
     font-family: $philly-font;
     padding-top:25px;
+    z-index: 100;
+  }
+  .body {
+    z-index: 100;
   }
   .foot {
     height: 100px;
     font-size: 14px;
     width: 75%;
     margin:auto; 
+    z-index: 100;
     //border: 1px solid;
   }
 }
@@ -171,10 +177,37 @@ path {
   margin:auto;
   color: $cream;
   background: $turq;
-  #larger {
-    font-size: 18px;
-  }
+  overflow: hidden;
+  position: relative;
+  #address {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    padding: 20px;
+    background: $splash;
+    .large {
+      font-size: 18px;
+    }
+  } 
 }
+
+#venue-map {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  .info {
+    position: absolute;
+    background: $cream;
+    color: $splash;
+    bottom: 0px;
+    right: 0px;
+    font-size: 10px;
+  } 
+  //.tile .major_road { stroke: #fb7b7a; stroke-width: 2px; }
+  //.tile .buildings-layer { fill: #fb7b7a; stroke: #987284; stroke-width: 0.15px; }
+}
+
 #logo {
   //background: url(../img/usc.jpeg) no-repeat 50% 0;
   height: 185px;
@@ -264,3 +297,30 @@ path {
     height: 65px;
   }
 }
+
+// map styles 
+
+.tile {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+}
+
+.tile path {
+  fill: none;
+  stroke: #eee;
+  stroke-width: .25px;
+  stroke-opacity: .75;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+//.tile .water, .tile .ocean { fill: #9DD9D2; stroke: #9DD9D2; }
+//.tile .water-layer, .tile .river, .tile .stream, .tile .canal { stroke: #9DD9D2; stroke-width: 1.5px;}
+//.tile .riverbank { fill: #9DD9D2; }
+//.tile .major_road { stroke: #fb7b7a; stroke-width: 1px; }
+//.tile .minor_road { stroke: #999; stroke-width: 0.5px; }
+//.tile .highway { stroke: #FA4A48; stroke-width: 1.5px; }
+//.tile .park, .tile .nature_reserve, .tile .wood, .tile .protected-land {fill: #88D18A;}
+//.tile .rail { stroke: #503D3F; stroke-width: 0.5px; }
+

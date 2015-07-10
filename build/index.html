@@ -15,6 +15,7 @@
     <link href='css/main.css' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans|Unica+One|Karla:400,400italic,700' rel='stylesheet' type='text/css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdn.rawgit.com/mbostock/topojson/master/topojson.js"></script>
     <script src="js/d3.geo.tile.js"></script>
   </head>
 
@@ -96,10 +97,11 @@
     Venue
   </div>
   <div class="body">
-    <!--p id="larger">We're excited to announce that year's conference will be at the <b>University City Science Center</b> in the heart of downtown Philadelphia.</p-->
-    <p>University City Science Center</br>
-    3711 Market Street, Suite 800</br>
-    Philadelphia, PA 19104</p>
+    <div id="address">
+      <p><span class="large">University City Science Center</span></br>
+      3711 Market Street, Suite 800</br>
+      Philadelphia, PA 19104</p>
+    </div>
   </div>
   <div class="foot">
   </div>

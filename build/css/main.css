@@ -41,12 +41,21 @@ h1, h2 {
   background: linear-gradient(90deg, #136a8a 10%, #267871 90%);
   background: #2f3b48;
   width: 100%;
-  padding: 10px; }
+  padding: 10px;
+  overflow: hidden; }
 
 #philly-map {
   position: absolute;
   top: 0px;
-  left: 0px; }
+  left: 0px;
+  overflow: hidden; }
+  #philly-map .info {
+    position: absolute;
+    background: #FCFDF8;
+    color: #2f3b48;
+    bottom: 0px;
+    right: 0px;
+    font-size: 10px; }
 
 #nav {
   position: absolute;
@@ -101,33 +110,50 @@ h1, h2 {
     margin: auto;
     width: 75%; }
 
-path {
-  fill: none;
-  stroke: #eee;
-  stroke-width: .25px;
-  stroke-opacity: .75;
-  stroke-linejoin: round;
-  stroke-linecap: round; }
-
 .content .head {
   height: 100px;
   font-size: 44px;
   font-family: 'Philly';
-  padding-top: 25px; }
+  padding-top: 25px;
+  z-index: 100; }
+.content .body {
+  z-index: 100; }
 .content .foot {
   height: 100px;
   font-size: 14px;
   width: 75%;
-  margin: auto; }
+  margin: auto;
+  z-index: 100; }
 
 #venue {
   font-size: 40%;
   height: 300px;
   margin: auto;
   color: #FCFDF8;
-  background: #406D7E; }
-  #venue #larger {
-    font-size: 18px; }
+  background: #406D7E;
+  overflow: hidden;
+  position: relative; }
+  #venue #address {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    padding: 20px;
+    background: #2f3b48; }
+    #venue #address .large {
+      font-size: 18px; }
+
+#venue-map {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden; }
+  #venue-map .info {
+    position: absolute;
+    background: #FCFDF8;
+    color: #2f3b48;
+    bottom: 0px;
+    right: 0px;
+    font-size: 10px; }
 
 #logo {
   height: 185px; }
@@ -197,3 +223,16 @@ path {
     height: 25px; }
   #conduct .head {
     height: 65px; }
+
+.tile {
+  position: absolute;
+  width: 256px;
+  height: 256px; }
+
+.tile path {
+  fill: none;
+  stroke: #eee;
+  stroke-width: .25px;
+  stroke-opacity: .75;
+  stroke-linejoin: round;
+  stroke-linecap: round; }
