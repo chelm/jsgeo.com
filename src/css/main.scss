@@ -247,10 +247,6 @@ $grad2: #267871;
   margin:0px;
 }
 
-#sponsors h1, h2 {   
-  padding:10px 0px;
-  margin:0px;
-}
 
 #speakers {
   color: $splash;
@@ -269,16 +265,36 @@ $grad2: #267871;
   }
 }
 
+#sponsors h1, h2 {   
+  padding:10px 0px;
+  margin:0px;
+}
+
 #sponsors {
   color: $cream;
   background: $turq;
   .sponsor {
-    width: 130px;
-    height: 100px;
+    background-color: $cream;
+    width: 150px;
     display: inline-block;
-    border-radius: 5px;
-    background: $splash;
-    color: $cream;
+    border-radius: 3px;
+  }
+  .sponsorimg {
+    width: 130px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+    top:10px;
+  }
+  .Azavea {
+    left: 10px;
+    top: 17px;
+  } 
+  .Cesium {
+    top: 20px; 
+  }
+  .Fulcrum {
+    left: 12px;
   }
 }
 

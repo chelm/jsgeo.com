@@ -184,10 +184,6 @@ h1, h2 {
   padding: 0px;
   margin: 0px; }
 
-#sponsors h1, h2 {
-  padding: 10px 0px;
-  margin: 0px; }
-
 #speakers {
   color: #2f3b48; }
   #speakers .head {
@@ -202,16 +198,31 @@ h1, h2 {
     color: #FCFDF8;
     margin: 5px 10px; }
 
+#sponsors h1, h2 {
+  padding: 10px 0px;
+  margin: 0px; }
+
 #sponsors {
   color: #FCFDF8;
   background: #406D7E; }
   #sponsors .sponsor {
-    width: 130px;
-    height: 100px;
+    background-color: #FCFDF8;
+    width: 150px;
     display: inline-block;
-    border-radius: 5px;
-    background: #2f3b48;
-    color: #FCFDF8; }
+    border-radius: 3px; }
+  #sponsors .sponsorimg {
+    width: 130px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+    top: 10px; }
+  #sponsors .Azavea {
+    left: 10px;
+    top: 17px; }
+  #sponsors .Cesium {
+    top: 20px; }
+  #sponsors .Fulcrum {
+    left: 12px; }
 
 #conduct {
   color: #2f3b48;
