@@ -1,0 +1,21 @@
+<div id="speakers"  class="content">
+  <div class="head">
+    Speakers
+  </div>
+  <div class="head">
+    {% for speaker in speakers %}
+      <div class="speaker">
+        <div>
+          <img width=100 height=100 src="./img/speakers/{{ speaker.img }}" />
+        </div>
+        <div>
+          <div class="name">{{ speaker.name }}</div>
+          <!--span class="org">{{ speaker.org }}</span-->
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="foot">
+    More speakers will be announce soon, but if you have an idea for talk or a demo please <a href="mailto:jsgeo.conf@gmail.com">reach out.</a>
+  </div>
+</div>
