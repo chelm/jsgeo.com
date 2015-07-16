@@ -193,10 +193,15 @@ h1, h2 {
     width: 120px;
     height: 120px;
     display: inline-block;
-    border-radius: 120px;
-    background: #2f3b48;
-    color: #FCFDF8;
-    margin: 5px 10px; }
+    color: #2f3b48;
+    margin: 5px 10px;
+    text-align: center; }
+  #speakers .org, #speakers .name {
+    font-size: 12px;
+    font-family: 'Open Sans';
+    width: 125px; }
+  #speakers .org {
+    font-size: 10px; }
 
 #sponsors h1, h2 {
   padding: 10px 0px;
