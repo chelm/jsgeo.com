@@ -213,6 +213,7 @@ h1, h2 {
   #sponsors .sponsor {
     background-color: #FCFDF8;
     width: 150px;
+    padding: 3px 0px;
     display: inline-block;
     border-radius: 3px; }
   #sponsors .sponsorimg {
@@ -229,7 +230,11 @@ h1, h2 {
   #sponsors .Fulcrum {
     left: 12px; }
   #sponsors .Zekiah {
-    top: 25px; }
+    top: 22px; }
+  #sponsors .BrightRain {
+    top: 22px; }
+  #sponsors .Cloudant {
+    top: 0px; }
 
 #conduct {
   color: #2f3b48;

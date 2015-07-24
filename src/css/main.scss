@@ -283,6 +283,7 @@ $grad2: #267871;
   .sponsor {
     background-color: $cream;
     width: 150px;
+    padding: 3px 0px;
     display: inline-block;
     border-radius: 3px;
   }
@@ -304,7 +305,13 @@ $grad2: #267871;
     left: 12px;
   }
   .Zekiah {
-    top: 25px;
+    top: 22px;
+  }
+  .BrightRain {
+    top: 22px;
+  }
+  .Cloudant {
+    top: 0px;
   }
 }
 
