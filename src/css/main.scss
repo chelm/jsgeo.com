@@ -256,11 +256,20 @@ $grad2: #267871;
   }
   .speaker {
     width: 120px;
-    height: 120px;
     display: inline-block;
     color: $splash;
     margin: 5px 10px;
     text-align: center;
+    vertical-align: top;
+  }
+  .avatar {
+    height: 110px
+  }
+  img {
+    border-radius: 100px;
+  }
+  .info {
+    height: 40px
   }
   .org, .name {
     font-size: 12px;
@@ -269,7 +278,12 @@ $grad2: #267871;
   }
   .org {
     font-size: 10px;
+    color: #999;
   } 
+  .foot {
+    position: relative;
+    top: 30px;
+  }
 }
 
 #sponsors h1, h2 {   

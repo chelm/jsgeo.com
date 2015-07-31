@@ -2,15 +2,15 @@
   <div class="head">
     Speakers
   </div>
-  <div class="head">
+  <div class="body">
     {% for speaker in speakers %}
       <div class="speaker">
-        <div>
+        <div class="avatar">
           <img width=100 height=100 src="./img/speakers/{{ speaker.img }}" />
         </div>
-        <div>
+        <div class="info">
           <div class="name">{{ speaker.name }}</div>
-          <!--span class="org">{{ speaker.org }}</span-->
+          <div class="org">{{ speaker.org }}</div>
         </div>
       </div>
     {% endfor %}

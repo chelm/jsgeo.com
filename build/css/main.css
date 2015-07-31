@@ -191,17 +191,27 @@ h1, h2 {
     padding: 25px 0; }
   #speakers .speaker {
     width: 120px;
-    height: 120px;
     display: inline-block;
     color: #2f3b48;
     margin: 5px 10px;
-    text-align: center; }
+    text-align: center;
+    vertical-align: top; }
+  #speakers .avatar {
+    height: 110px; }
+  #speakers img {
+    border-radius: 100px; }
+  #speakers .info {
+    height: 40px; }
   #speakers .org, #speakers .name {
     font-size: 12px;
     font-family: 'Open Sans';
     width: 125px; }
   #speakers .org {
-    font-size: 10px; }
+    font-size: 10px;
+    color: #999; }
+  #speakers .foot {
+    position: relative;
+    top: 30px; }
 
 #sponsors h1, h2 {
   padding: 10px 0px;
