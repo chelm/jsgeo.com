@@ -1,0 +1,43 @@
+{
+  "name": "jsgeo.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rimraf build && npm run dev",
+    "dev": "acetate server --open | npm run watchify | npm run sass:watch ",
+    "assets": "npm run browserify | npm run sass | npm run img",
+    "build": "rimraf build && npm run assets && npm run rev && acetate build",
+    "rev": "hashmark -l 8 --asset-map=build/asset-manifest.json 'build/{js,img,css}/**/*.{css,js,png,gif,jpg,jpeg}' '{dir}/{name}.{hash}{ext}'",
+    "watchify": "mkdirp build/js && watchify src/js/main.js -o build/js/main.js -d",
+    "browserify": "mkdirp build/js && browserify src/js/main.js -o build/js/main.js",
+    "sass": "node-sass src/css/main.scss -o build/css --output-style=compressed && cp src/css/*.ttf build/css",
+    "sass:watch": "node-sass src/css/main.scss --output=build/css --source-map-contents=true --source-map-embed=true && node-sass src/css/main.scss --watch src/css/main.css --output=build/css --source-map-contents=true --source-map-embed=true",
+    "img": "imagemin-newer src/img/ build/img/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chelm/jsgeo.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chelm/jsgeo.com/issues"
+  },
+  "homepage": "https://github.com/chelm/jsgeo.com#readme",
+  "devDependencies": {
+    "acetate": "^0.3.0",
+    "acetate-asset-revisions": "^0.1.0",
+    "acetate-cli": "0.0.3",
+    "babelify": "^6.0.2",
+    "browser-sync": "^2.6.5",
+    "browserify": "^9.0.3",
+    "hashmark": "^2.0.2",
+    "imagemin-newer": "^1.0.1",
+    "mkdirp": "^0.5.0",
+    "node-sass": "^2.1.1",
+    "rerun-script": "^0.6.0",
+    "rimraf": "^2.3.2",
+    "watchify": "^3.1.2"
+  }
+}

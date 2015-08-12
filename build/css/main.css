@@ -1,0 +1,271 @@
+@font-face {
+  font-family: Philly;
+  src: url(./MLBPhiladelphiaPhillies1980.ttf); }
+
+html, body {
+  background: #FCFDF8;
+  text-align: center;
+  font-family: 'Open Sans', 'Karla', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 150%;
+  padding: 0px;
+  margin: 0px;
+  color: #222; }
+
+h3, h4, h5, h6 {
+  font-family: 'Unica One', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #FCFDF8; }
+
+h1, h2 {
+  font-family: 'Philly';
+  font-weight: normal;
+  color: #FCFDF8; }
+
+.block {
+  position: relative;
+  display: inline-block;
+  float: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  vertical-align: top; }
+
+.third {
+  width: 25%; }
+
+#banner {
+  background: -webkit-linear-gradient(90deg, #136a8a 10%, #267871 90%);
+  background: -moz-linear-gradient(90deg, #136a8a 10%, #267871 90%);
+  background: -ms-linear-gradient(90deg, #136a8a 10%, #267871 90%);
+  background: -o-linear-gradient(90deg, #136a8a 10%, #267871 90%);
+  background: linear-gradient(90deg, #136a8a 10%, #267871 90%);
+  background: #2f3b48;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden; }
+
+#philly-map {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden; }
+  #philly-map .info {
+    position: absolute;
+    background: #FCFDF8;
+    color: #2f3b48;
+    bottom: 0px;
+    right: 0px;
+    font-size: 10px; }
+
+#nav {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 75px;
+  z-index: 100; }
+  #nav span {
+    font-size: 20px;
+    font-family: 'Unica One', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #FCFDF8;
+    margin: 0px 10px; }
+  #nav a {
+    font-size: 20px;
+    font-family: 'Unica One', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #FCFDF8;
+    margin: 0px 10px;
+    text-decoration: none; }
+
+#nav a:hover {
+  color: #406D7E; }
+
+#nav span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #406D7E; }
+
+#tix {
+  border: 1px solid #FCFDF8;
+  border-radius: 10px;
+  color: #FCFDF8;
+  font-size: 20px;
+  padding: 10px;
+  z-index: 100; }
+
+#tix:hover {
+  cursor: pointer;
+  background: #800; }
+
+#content {
+  margin-top: 0px; }
+  #content .section {
+    padding: 35px 10px; }
+
+#about {
+  font-size: 60%;
+  color: #2f3b48; }
+  #about #info {
+    padding-bottom: 10px;
+    margin: auto;
+    width: 75%; }
+
+.content .head {
+  height: 100px;
+  font-size: 44px;
+  font-family: 'Philly';
+  padding-top: 25px;
+  z-index: 100; }
+.content .body {
+  z-index: 100; }
+.content .foot {
+  height: 100px;
+  font-size: 14px;
+  width: 75%;
+  margin: auto;
+  z-index: 100; }
+
+#venue {
+  font-size: 40%;
+  height: 300px;
+  margin: auto;
+  color: #FCFDF8;
+  background: #406D7E;
+  overflow: hidden;
+  position: relative; }
+  #venue #address {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    padding: 20px;
+    background: #2f3b48; }
+    #venue #address .large {
+      font-size: 18px; }
+
+#venue-map {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden; }
+  #venue-map .info {
+    position: absolute;
+    background: #FCFDF8;
+    color: #2f3b48;
+    bottom: 0px;
+    right: 0px;
+    font-size: 10px; }
+
+#logo {
+  height: 185px; }
+
+#details {
+  font-size: 75%;
+  color: #fff;
+  background: #42946C;
+  font-family: 'Philly'; }
+
+.deets {
+  font-family: 'Philly'; }
+
+#register {
+  background: #081860;
+  width: 250px;
+  margin: auto;
+  padding: 5px;
+  font-size: 28px; }
+  #register h4 {
+    padding: 1px; }
+
+#footer {
+  border-top: 1px solid #aaa;
+  width: 75%; }
+
+#speakers h1, h2 {
+  padding: 0px;
+  margin: 0px; }
+
+#speakers {
+  color: #2f3b48; }
+  #speakers .head {
+    height: auto;
+    padding: 25px 0; }
+  #speakers .speaker {
+    width: 120px;
+    display: inline-block;
+    color: #2f3b48;
+    margin: 5px 10px;
+    text-align: center;
+    vertical-align: top; }
+  #speakers .avatar {
+    height: 110px; }
+  #speakers img {
+    border-radius: 100px; }
+  #speakers .info {
+    height: 40px; }
+  #speakers .org, #speakers .name {
+    font-size: 12px;
+    font-family: 'Open Sans';
+    width: 125px; }
+  #speakers .org {
+    font-size: 10px;
+    color: #999; }
+  #speakers .foot {
+    position: relative;
+    top: 30px; }
+
+#sponsors h1, h2 {
+  padding: 10px 0px;
+  margin: 0px; }
+
+#sponsors {
+  color: #FCFDF8;
+  background: #406D7E; }
+  #sponsors .sponsor {
+    background-color: #FCFDF8;
+    width: 150px;
+    padding: 3px 0px;
+    display: inline-block;
+    border-radius: 3px; }
+  #sponsors .sponsorimg {
+    width: 130px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+    top: 10px; }
+  #sponsors .Azavea {
+    left: 10px;
+    top: 17px; }
+  #sponsors .Cesium {
+    top: 20px; }
+  #sponsors .Fulcrum {
+    left: 12px; }
+  #sponsors .Zekiah {
+    top: 22px; }
+  #sponsors .BrightRain {
+    top: 22px; }
+  #sponsors .Cloudant {
+    top: 0px; }
+
+#conduct {
+  color: #2f3b48;
+  font-size: 50%; }
+  #conduct .body {
+    width: 75%;
+    margin: auto; }
+  #conduct .foot {
+    height: 25px; }
+  #conduct .head {
+    height: 65px; }
+
+.tile {
+  position: absolute;
+  width: 256px;
+  height: 256px; }
+
+.tile path {
+  fill: none;
+  stroke: #eee;
+  stroke-width: .25px;
+  stroke-opacity: .75;
+  stroke-linejoin: round;
+  stroke-linecap: round; }

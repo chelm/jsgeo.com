@@ -1,0 +1,13 @@
+<div id="sponsors" class="content">
+  <div class="head">
+    Sponsors
+  </div>
+  <div class="body">
+    {% for s in sponsors %}
+      <div class="sponsor"><a href="{{ s.url }}" target="_blank"><div class="sponsorimg {{ s.name }}" style="background: url(./img/sponsors/{{ s.name.toLowerCase() }}.png) no-repeat 0 0;"></div></a></div>
+    {% endfor %}
+  </div>
+  <div class="foot">
+    <p>Sponsors mean everything to us. <a href="mailto:jsgeo.conf@gmail.com"> Interested in sponsoring JS.Geo?</a> Let's talk!</p>
+  </div>
+</div>
