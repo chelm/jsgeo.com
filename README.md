@@ -20,7 +20,7 @@ Those steps run a series of npm tasks, most importantly is the build step:
   # or
   
   # build the site and open in a browser
-  acatate server --open  
+  acetate server --open  
 
 ```
 
