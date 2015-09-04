@@ -189,6 +189,10 @@ $grad2: #267871;
       font-size: 18px;
     }
   } 
+  #address p {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 #venue-map {
