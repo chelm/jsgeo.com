@@ -143,6 +143,9 @@ h1, h2 {
     background: #2f3b48; }
     #venue #address .large {
       font-size: 18px; }
+  #venue #address p {
+    position: relative;
+    z-index: 2; }
 
 #venue-map {
   position: absolute;
@@ -214,6 +217,14 @@ h1, h2 {
   #speakers .foot {
     position: relative;
     top: 30px; }
+
+#schedule h1, h2 {
+  padding: 10px 0px;
+  margin: 0px; }
+
+#schedule {
+  color: #FCFDF8;
+  background: #406D7E; }
 
 #sponsors h1, h2 {
   padding: 10px 0px;
