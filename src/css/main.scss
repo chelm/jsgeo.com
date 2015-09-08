@@ -69,6 +69,7 @@ $grad2: #267871;
   width: 100%;
   padding: 10px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 #philly-map {
@@ -287,6 +288,24 @@ $grad2: #267871;
   .foot {
     position: relative;
     top: 30px;
+  }
+}
+
+#schedule h1, h2 {
+  padding:10px 0px;
+  margin:0px;
+}
+
+#schedule h3 {
+  padding:10px 0px;
+  margin:0px;
+}
+
+#schedule {
+  color: $cream;
+  background: $turq;
+  p {
+    font-size: 16px;
   }
 }
 
