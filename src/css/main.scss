@@ -69,7 +69,7 @@ $grad2: #267871;
   width: 100%;
   padding: 10px;
   overflow: hidden;
-  //box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #philly-map {
@@ -296,9 +296,17 @@ $grad2: #267871;
   margin:0px;
 }
 
+#schedule h3 {
+  padding:10px 0px;
+  margin:0px;
+}
+
 #schedule {
   color: $cream;
   background: $turq;
+  p {
+    font-size: 16px;
+  }
 }
 
 #sponsors h1, h2 {   

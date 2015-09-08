@@ -42,7 +42,8 @@ h1, h2 {
   background: #2f3b48;
   width: 100%;
   padding: 10px;
-  overflow: hidden; }
+  overflow: hidden;
+  box-sizing: border-box; }
 
 #philly-map {
   position: absolute;
@@ -222,9 +223,15 @@ h1, h2 {
   padding: 10px 0px;
   margin: 0px; }
 
+#schedule h3 {
+  padding: 10px 0px;
+  margin: 0px; }
+
 #schedule {
   color: #FCFDF8;
   background: #406D7E; }
+  #schedule p {
+    font-size: 16px; }
 
 #sponsors h1, h2 {
   padding: 10px 0px;
