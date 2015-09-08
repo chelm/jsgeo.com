@@ -5,19 +5,19 @@
 html, body {
   background: #FCFDF8;
   text-align: center;
-  font-family: 'Open Sans', 'Karla', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-family: "Open Sans", "Karla", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 150%;
   padding: 0px;
   margin: 0px;
   color: #222; }
 
 h3, h4, h5, h6 {
-  font-family: 'Unica One', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-family: "Unica One", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   text-transform: uppercase;
   color: #FCFDF8; }
 
 h1, h2 {
-  font-family: 'Philly';
+  font-family: "Philly";
   font-weight: normal;
   color: #FCFDF8; }
 
@@ -65,13 +65,13 @@ h1, h2 {
   z-index: 100; }
   #nav span {
     font-size: 20px;
-    font-family: 'Unica One', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-family: "Unica One", "Helvetica Neue", "Helvetica", Arial, sans-serif;
     text-transform: uppercase;
     color: #FCFDF8;
     margin: 0px 10px; }
   #nav a {
     font-size: 20px;
-    font-family: 'Unica One', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-family: "Unica One", "Helvetica Neue", "Helvetica", Arial, sans-serif;
     text-transform: uppercase;
     color: #FCFDF8;
     margin: 0px 10px;
@@ -113,11 +113,13 @@ h1, h2 {
 .content .head {
   height: 100px;
   font-size: 44px;
-  font-family: 'Philly';
+  font-family: "Philly";
   padding-top: 25px;
   z-index: 100; }
+
 .content .body {
   z-index: 100; }
+
 .content .foot {
   height: 100px;
   font-size: 14px;
@@ -162,10 +164,10 @@ h1, h2 {
   font-size: 75%;
   color: #fff;
   background: #42946C;
-  font-family: 'Philly'; }
+  font-family: "Philly"; }
 
 .deets {
-  font-family: 'Philly'; }
+  font-family: "Philly"; }
 
 #register {
   background: #081860;
