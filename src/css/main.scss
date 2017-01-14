@@ -1,8 +1,3 @@
-@font-face {
-  font-family: Philly;
-  src: url(./MLBPhiladelphiaPhillies1980.ttf);
-}
-
 $blue: #081860;
 $cream: #FCFDF8;
 $gray: #bcc4d3;
@@ -12,10 +7,10 @@ $maroon: #800;
 $turq: #406D7E; 
 
 
-$body-font: 'Open Sans', 'Karla', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+$body-font: 'Unica One', 'Karla', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 $header-font: 'Unica One', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+$about-font: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 $mono-font: 'Menlo', 'Source Code Pro', monospace;
-$philly-font: 'Philly';
 
 html, body {
   background: $cream;
@@ -27,20 +22,14 @@ html, body {
   color: #222;
 }
 
-h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: $header-font;
   text-transform: uppercase;
   color: $cream;
-}
-
-h1, h2 {
-  font-family: $philly-font;
   font-weight: normal;
-  color: $cream;
+  margin: 5px;
 }
 
-h1 {
-}
 
 .block {
   position: relative;
@@ -141,21 +130,21 @@ $grad2: #267871;
 }
 
 #about {
-  font-size: 60%;
+  font-family: $about-font;
+  font-size: 50%;
   color: $splash;
   #info {
     padding-bottom: 10px;
     margin:auto;
-    width: 75%;
+    width: 50%;
   }
 }
 
 .content {
   .head {
-    height: 100px;
+    height: 60px;
     font-size: 44px; 
     //border: 1px solid;
-    font-family: $philly-font;
     padding-top:25px;
     z-index: 100;
   }
@@ -163,7 +152,7 @@ $grad2: #267871;
     z-index: 100;
   }
   .foot {
-    height: 100px;
+    height: 25px;
     font-size: 14px;
     width: 75%;
     margin:auto; 
@@ -173,13 +162,16 @@ $grad2: #267871;
 }
 
 #venue {
-  font-size: 40%;
-  height: 300px;
+  font-size: 50%;
+  font-family: $about-font;
   margin:auto;
-  color: $cream;
-  background: $turq;
+  color: $splash;
   overflow: hidden;
   position: relative;
+  #info {
+    margin:auto;
+    width: 50%;
+  }  
   #address {
     position: absolute;
     top: 30%;
@@ -193,6 +185,51 @@ $grad2: #267871;
   #address p {
     position: relative;
     z-index: 2;
+  }
+  #h4 {
+    font-family: $body-font; 
+    color: $splash !important;
+    margin: 0px;
+  }
+}
+
+#tickets {
+  font-size: 50%;
+  font-family: $about-font;
+  height: 300px;
+  margin:auto;
+  color: $splash;
+  overflow: hidden;
+  position: relative;
+  #tix-info {
+    margin:auto;
+    width: 60%;
+  }
+  #h4 {
+    font-family: $body-font;
+    color: $splash !important;
+  }
+}
+
+.head {
+  font-family: $header-font;
+  height: 50px;
+}
+
+#talks {
+  font-size: 50%;
+  font-family: $about-font;
+  margin:auto;
+  color: $splash;
+  overflow: hidden;
+  position: relative;
+  #talks-info {
+    margin:auto;
+    width: 60%;
+  }
+  #h4 {
+    font-family: $body-font;
+    color: $splash !important;
   }
 }
 
@@ -222,13 +259,11 @@ $grad2: #267871;
   font-size: 75%;
   color: #fff;
   background: #42946C;
-  font-family: $philly-font;
   //background: url(../img/philly_aerial.jpg) no-repeat 0 0;
   //height: 400px;
 }
 
 .deets {
-  font-family: $philly-font;
 }
 
 #register {
@@ -256,6 +291,7 @@ $grad2: #267871;
 #speakers {
   color: $splash;
   .head {
+    font-family: $body-font;
     height: auto;
     padding: 25px 0;
   }
@@ -364,7 +400,7 @@ $grad2: #267871;
     height: 25px;
   }
   .head {
-    height: 65px;
+    height: 35px;
   }
 }
 
