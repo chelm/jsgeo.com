@@ -1,18 +1,18 @@
 html, body {
   background: #FCFDF8;
   text-align: center;
-  font-family: 'Unica One', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-family: 'Unica One', 'Karla', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-size: 150%;
   padding: 0px;
   margin: 0px;
   color: #222; }
 
-h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Unica One', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   text-transform: uppercase;
-  color: #FCFDF8; }
-
-h1, h2 {
-  color: #FCFDF8; }
+  color: #FCFDF8;
+  font-weight: normal;
+  margin: 5px; }
 
 .block {
   position: relative;
@@ -35,7 +35,21 @@ h1, h2 {
   background: #2f3b48;
   width: 100%;
   padding: 10px;
+  overflow: hidden;
+  box-sizing: border-box; }
+
+#philly-map {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   overflow: hidden; }
+  #philly-map .info {
+    position: absolute;
+    background: #FCFDF8;
+    color: #2f3b48;
+    bottom: 0px;
+    right: 0px;
+    font-size: 10px; }
 
 #nav {
   position: absolute;
@@ -83,35 +97,38 @@ h1, h2 {
     padding: 35px 10px; }
 
 #about {
-  font-size: 60%;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 50%;
   color: #2f3b48; }
   #about #info {
     padding-bottom: 10px;
     margin: auto;
-    width: 75%; }
+    width: 50%; }
 
 .content .head {
-  height: 100px;
+  height: 60px;
   font-size: 44px;
   padding-top: 25px;
   z-index: 100; }
 .content .body {
   z-index: 100; }
 .content .foot {
-  height: 100px;
+  height: 25px;
   font-size: 14px;
   width: 75%;
   margin: auto;
   z-index: 100; }
 
 #venue {
-  font-size: 40%;
-  height: 300px;
+  font-size: 50%;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   margin: auto;
-  color: #FCFDF8;
-  background: #406D7E;
+  color: #2f3b48;
   overflow: hidden;
   position: relative; }
+  #venue #info {
+    margin: auto;
+    width: 50%; }
   #venue #address {
     position: absolute;
     top: 30%;
@@ -120,6 +137,46 @@ h1, h2 {
     background: #2f3b48; }
     #venue #address .large {
       font-size: 18px; }
+  #venue #address p {
+    position: relative;
+    z-index: 2; }
+  #venue #h4 {
+    font-family: 'Unica One', 'Karla', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    color: #2f3b48 !important;
+    margin: 0px; }
+
+#tickets {
+  font-size: 50%;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  height: 300px;
+  margin: auto;
+  color: #2f3b48;
+  overflow: hidden;
+  position: relative; }
+  #tickets #tix-info {
+    margin: auto;
+    width: 60%; }
+  #tickets #h4 {
+    font-family: 'Unica One', 'Karla', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    color: #2f3b48 !important; }
+
+.head {
+  font-family: 'Unica One', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  height: 50px; }
+
+#talks {
+  font-size: 50%;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  margin: auto;
+  color: #2f3b48;
+  overflow: hidden;
+  position: relative; }
+  #talks #talks-info {
+    margin: auto;
+    width: 60%; }
+  #talks #h4 {
+    font-family: 'Unica One', 'Karla', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    color: #2f3b48 !important; }
 
 #venue-map {
   position: absolute;
@@ -140,10 +197,7 @@ h1, h2 {
 #details {
   font-size: 75%;
   color: #fff;
-  background: #42946C;
-}
-
-.deets { }
+  background: #42946C; }
 
 #register {
   background: #081860;
@@ -165,6 +219,7 @@ h1, h2 {
 #speakers {
   color: #2f3b48; }
   #speakers .head {
+    font-family: 'Unica One', 'Karla', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     height: auto;
     padding: 25px 0; }
   #speakers .speaker {
@@ -190,6 +245,20 @@ h1, h2 {
   #speakers .foot {
     position: relative;
     top: 30px; }
+
+#schedule h1, h2 {
+  padding: 10px 0px;
+  margin: 0px; }
+
+#schedule h3 {
+  padding: 10px 0px;
+  margin: 0px; }
+
+#schedule {
+  color: #FCFDF8;
+  background: #406D7E; }
+  #schedule p {
+    font-size: 16px; }
 
 #sponsors h1, h2 {
   padding: 10px 0px;
@@ -233,7 +302,7 @@ h1, h2 {
   #conduct .foot {
     height: 25px; }
   #conduct .head {
-    height: 65px; }
+    height: 35px; }
 
 .tile {
   position: absolute;
